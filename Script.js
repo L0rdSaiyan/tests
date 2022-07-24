@@ -91,7 +91,7 @@ revelou = revelou-2;
 let nome = 'goku';
 let transformacao = 'super saiyajin';
 
-alert( `${nome} se transformou em ${transformacao}`)
+//alert( `${nome} se transformou em ${transformacao}`)
 
 let vetor = ["joao", "bruno", "patrick", {"nome":"victor"}]
 vetor.push("Lord Saiyan");
@@ -107,3 +107,60 @@ let pessoa = {
 }
 pessoa.altura = 1.80;
 console.table(pessoa);
+
+const audio = document.getElementById("audio");
+
+let tocou = 0;
+
+function tocarAudio(){
+
+  tocou=tocou+1;  
+  
+  if(tocou==1){
+   tocou=tocou-2;
+  audio.play();
+  }else{
+
+   audio.pause(); 
+   audio.currentTime = 0;
+
+  }
+}
+
+function setTime(){
+
+let result = document.getElementById("tempo").value
+console.log(result)
+audio.currentTime = result;
+
+
+}
+
+
+const musica = document.getElementById("audio2")
+let tocou2=0;
+
+function tocarAudio2(){
+
+  tocou2=tocou2+1;  
+  
+  if(tocou2==1){
+   tocou2=tocou2-2;
+  musica.play();
+  }else{
+
+   musica.pause(); 
+   musica.currentTime = 0;
+
+  }
+
+
+
+}
+
+function setTime2(){
+
+let value = document.getElementById("tempo2").value
+musica.currentTime = value;
+
+}

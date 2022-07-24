@@ -64,16 +64,23 @@
     <br>
 
     <div id="btnSecreto">
-  <button id="imgSecreta" onclick="revelarImg();">Clique aqui</button>
+  <button id="imgSecreta" onclick="revelarImg();">Revelar IMG</button>
 </div>
 
 
     <img id="imgSecretar" src="">
+    <br>
 
-      <audio src="bruh.wav"></audio>
-    <button id="btnAudio">clique em mim</button>
-
-  <script>
+      <audio id="audio" src="bruh.wav"></audio>
+    <button id="btnAudio" onclick="tocarAudio();">clique em mim</button>
+     <input id="tempo" type="number">
+     <button id="btnTempo" onclick="setTime();">Definir inicio do audio <audio src=""></audio></button>
+     <br>
+     <audio id="audio2" src="dbzabertura.wav"></audio>
+     <button id="btnAudio2" onclick="tocarAudio2();">Clique aqui</button>
+     <input id="tempo2" type="number">
+     <button id="btnTempo2" onclick="setTime2();">Definir tempo</button>
+     <!-- <script>
  
    const button = document.getElementById("btnAudio")
 
@@ -82,7 +89,7 @@
    audio.play();
    
    
-  })
+  }) -->
 
 
   </script>
