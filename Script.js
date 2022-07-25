@@ -147,6 +147,7 @@ function tocarAudio2(){
   if(tocou2==1){
    tocou2=tocou2-2;
   musica.play();
+  musica.loop = true;
   }else{
 
    musica.pause(); 
